@@ -4,14 +4,13 @@ class Anagram
   
   def initialize(word)
     @word = word
-    match = %w(Anagram.new)
   end
   
   def match(array)
     collection = []
-    array.collect do |x|
-      if x.sort == @word.sort
-        return collection << x
+    array.each do |word|
+      if %w(word.sort) == %w(@word.sort)
+        return collection << %w(word.sort)
       else 
         collection
       end
