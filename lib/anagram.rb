@@ -10,9 +10,7 @@ class Anagram
     collection = []
     array.each do |word|
       if %W(word.sort) == %W(@word.sort)
-        return collection << %w(word.sort)
-      else 
-        collection
+        collection << %w(word.sort)
       end
     end
     collection
